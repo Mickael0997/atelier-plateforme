@@ -1,0 +1,22 @@
+{
+  "name": "atelier-plateforme",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Environnement de travail : sites web, agents IA MCP et plateforme de réservation type Planity",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/web",
+    "dev:web": "npm run dev --workspace=apps/web",
+    "dev:mcp": "npm run start --workspace=apps/mcp-server",
+    "build": "npm run build --workspace=apps/web",
+    "lint": "npm run lint --workspace=apps/web",
+    "seed": "node scripts/seed.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

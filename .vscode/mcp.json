@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "atelier-plateforme": {
+      "command": "node",
+      "args": ["${workspaceFolder}/apps/mcp-server/src/index.mjs"]
+    }
+  }
+}
