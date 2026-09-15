@@ -10,6 +10,8 @@
   "scripts": {
     "dev": "npm run dev --workspace=apps/web",
     "dev:web": "npm run dev --workspace=apps/web",
+    "clean": "node -e \"try{require('fs').rmSync('apps/web/.next',{recursive:true,force:true})}catch(e){}\"",
+    "dev:fresh": "npm run clean && npm run dev",
     "dev:mcp": "npm run start --workspace=apps/mcp-server",
     "build": "npm run build --workspace=apps/web",
     "lint": "npm run lint --workspace=apps/web",
