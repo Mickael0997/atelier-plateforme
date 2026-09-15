@@ -1,0 +1,4 @@
+[
+  {"id":"u-client-1","role":"client","name":"Camille Roux","email":"camille@client.atelier","password":"client123","phone":"06 00 00 00 01","salonId":null},
+  {"id":"u-pro-1","role":"pro","name":"Léa Martin","email":"lea@atelier-nation.pro","password":"pro123","phone":"01 43 00 00 12","salonId":"s1"}
+]
