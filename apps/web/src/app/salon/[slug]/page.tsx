@@ -6,6 +6,7 @@ export default async function SalonPage({ params }: { params: Promise<{ slug: st
   const { slug } = await params;
   const salon = getSalon(slug);
   if (!salon) notFound();
+  const teamTitle = "Equipe";
 
   return (
     <main className="layout-2">
@@ -39,7 +40,7 @@ export default async function SalonPage({ params }: { params: Promise<{ slug: st
         </ul>
       </section>
       <aside className="card">
-        <h2 style={{ marginTop: 0 }}Équipe</h2>
+        <h2 style={{ marginTop: 0 }}>{teamTitle}</h2>
         <ul className="list">
           {salon.staff.map((st) => (
             <li key={st.id}>
